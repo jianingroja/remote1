@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
+import { useRouter } from 'next/router';
 
 const Index = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
@@ -10,7 +13,9 @@ const Index = () => {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className={styles.page}>Home</div>
+			<div className={styles.page}>
+				<h1>UseRouter Complex Page Next JS</h1>
+			</div>
 		</>
 	);
 };
