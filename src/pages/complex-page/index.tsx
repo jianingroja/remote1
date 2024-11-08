@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 const Index = () => {
 	const router = useRouter();
+	const path = router.asPath;
 
 	return (
 		<>
@@ -15,6 +16,7 @@ const Index = () => {
 			</Head>
 			<div className={styles.page}>
 				<h1>UseRouter Complex Page Next JS</h1>
+				<p>{path}</p>
 			</div>
 		</>
 	);
